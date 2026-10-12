@@ -1,3 +1,3 @@
-# 2514101086
-Dhiya Hasbi Ramadhani
+# Dhiya Hasbi Ramadhani
+NPM: 2514101086
 kelas 3b
