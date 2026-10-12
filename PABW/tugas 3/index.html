@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Pangandaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <h2>Wisata Pangandaran</h2>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#destinasi">Destinasi</a>
+            <a href="#tiket">Tiket Wisata</a>
+            <a href="#video">Video</a>
+            <a href="#tentang">Tentang</a>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="hero" id="beranda">
+        <div class="hero-slide active">
+            <img src="images/pemandangan_pantai.jpg"
+                 alt="Pemandangan pantai">
+            <div class="hero-text">
+                <h1>Jelajahi Keindahan Pangandaran</h1>
+                <p>Nikmati pantai, laut, dan pengalaman wisata yang menyenangkan.</p>
+                <a href="#destinasi" class="btn">Jelajahi Sekarang</a>
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <img src="images/kenangan.JPG"
+                 alt="Pantai dengan pasir">
+            <div class="hero-text">
+                <h1>Liburan Seru di Pangandaran</h1>
+                <p>Temukan tempat wisata favoritmu bersama orang tersayang.</p>
+                <a href="#destinasi" class="btn">Lihat Destinasi</a>
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <img src="images/aktivitas.jpg"
+                 alt="Aktivitas wisata air">
+            <div class="hero-text">
+                <h1>Petualangan Menanti!</h1>
+                <p>Rasakan keseruan berbagai aktivitas wisata bahari.</p>
+                <a href="#tiket" class="btn">Lihat Tiket</a>
+            </div>
+        </div>
+
+        <button class="hero-arrow prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="hero-arrow next" onclick="changeSlide(1)">&#10095;</button>
+
+        <div class="hero-dots">
+            <button onclick="showSlide(0)"></button>
+            <button onclick="showSlide(1)"></button>
+            <button onclick="showSlide(2)"></button>
+        </div>
+    </section>
+
+    <!-- DESTINASI -->
+    <section class="section" id="destinasi">
+        <h2>Destinasi Wisata</h2>
+        <p class="section-desc">Pilih tempat wisata yang ingin kamu kunjungi.</p>
+
+        <div class="destination-wrapper">
+            <button class="carousel-btn" onclick="scrollDestinations(-1)">
+                &#10094;
+            </button>
+
+            <div class="destination-list" id="destinationList">
+
+                <article class="destination-card">
+                    <img src="images/pantai_timur.JPG"
+                         alt="Pantai Timur Pangandaran">
+                    <div class="card-content">
+                        <h3>Pantai Timur</h3>
+                        <p>Nikmati suasana pantai dan berbagai aktivitas wisata air.</p>
+                        <a href="#tiket" class="btn">Lihat Tiket</a>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img src="images/pantai_barat.JPG"
+                         alt="Pantai Barat Pangandaran">
+                    <div class="card-content">
+                        <h3>Pantai Barat</h3>
+                        <p>Tempat menikmati pemandangan laut dan matahari terbenam.</p>
+                        <a href="#tiket" class="btn">Lihat Tiket</a>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img src="images/batu_hiu.JPG"
+                         alt="Pantai Batu Hiu">
+                    <div class="card-content">
+                        <h3>Pantai Batu Hiu</h3>
+                        <p>Jelajahi pemandangan alam dan kawasan pantai yang menarik.</p>
+                        <a href="#tiket" class="btn">Lihat Tiket</a>
+                    </div>
+                </article>
+
+                <article class="destination-card">
+                    <img src="images/banana_boat.jpg"
+                         alt="Aktivitas Banana Boat">
+                    <div class="card-content">
+                        <h3>Banana Boat</h3>
+                        <p>Rasakan keseruan bermain air bersama teman atau keluarga.</p>
+                        <a href="#tiket" class="btn">Lihat Tiket</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <button class="carousel-btn" onclick="scrollDestinations(1)">
+                &#10095;
+            </button>
+        </div>
+    </section>
+
+    ```html
+<!-- TIKET -->
+<section class="section ticket-section" id="tiket">
+    <h2>Paket Tiket Wisata</h2>
+    <p class="section-desc">
+        Pilih paket wisata sesuai keinginanmu.
+    </p>
+
+    <div class="ticket-list">
+
+        <!-- PAKET 1 -->
+        <article class="ticket-card">
+            <img src="images/pantai_timur.JPG"
+                 alt="Paket wisata pantai Pangandaran">
+
+            <div class="ticket-content">
+                <h3>Paket Wisata Pantai</h3>
+                <p>
+                    Kunjungi tiga destinasi wisata dalam satu paket,
+                    yaitu Pantai Timur, Pantai Barat, dan Pantai Batu Hiu.
+                </p>
+
+                <ul>
+                    <li>Pantai Timur</li>
+                    <li>Pantai Barat</li>
+                    <li>Pantai Batu Hiu</li>
+                </ul>
+
+                <button onclick="showTicket('Paket Wisata Pantai')">
+                    Rp. 20000
+                </button>
+            </div>
+        </article>
+
+        <!-- PAKET 2 -->
+        <article class="ticket-card">
+            <img src="images/banana_boat.jpg"
+                 alt="Aktivitas banana boat Pangandaran">
+
+            <div class="ticket-content">
+                <h3>Paket Banana Boat</h3>
+                <p>
+                    Nikmati keseruan bermain banana boat
+                    dan rasakan pengalaman wisata air yang menyenangkan.
+                </p>
+
+                <button onclick="showTicket('Banana Boat')">
+                    Rp. 125000
+                </button>
+            </div>
+        </article>
+
+    </div>
+</section>
+```
+
+    <!-- TENTANG -->
+    <section class="section about-section" id="tentang">
+        <h2>Tentang Pangandaran</h2>
+        <p>
+            Pangandaran merupakan salah satu destinasi wisata di Jawa Barat
+            yang menawarkan keindahan pantai, pemandangan alam, dan beragam
+            aktivitas wisata yang menarik untuk dikunjungi.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Wisata Pangandaran | Jelajahi Keindahannya</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
